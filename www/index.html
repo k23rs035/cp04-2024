@@ -213,9 +213,9 @@
         $("#remain").html("残り時間： " + rest);
         analog(rest);
         
-    // 2.6 タイマーの終了の処理
-    if (rest <= 0 || rect == 0){
+        if (rest <= 0){
         active = false;
+        alarm();
     }
 }
 
