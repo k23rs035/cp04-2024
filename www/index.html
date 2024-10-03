@@ -190,23 +190,24 @@
     function btnBClick(e){
         active = false; 
         active = false;
-        period = 60 * parseInt($("#minute").val()) + parseInt($("#second").val());
-        $("#time").html("経過時間： 0");
-        $("#remain").html("残り時間： " + period);
-
+        
     }
 
     // ButtonCがクリックされた時の処理
     function btnCClick(e){
         alarm();
-        
+        period = 60 * parseInt($("#minute").val()) + parseInt($("#second").val());
+        $("#time").html("経過時間： 0");
+        $("#remain").html("残り時間： " + period);
+
     }
     
  
     // 繰り返し実行する処理
     function timer(){  
         
-        
+}
+
     } 
 
   </script>
