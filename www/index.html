@@ -159,11 +159,19 @@
     
     // ボタンの初期設定
     function init(){
-        $('#btnA').prop('disabled', false);
-        $('#btnB').prop('disabled', false);
-        $('#btnC').prop('disabled', false);
-        
-    }
+    $('#btnA').prop('disabled', false);
+    $('#btnB').prop('disabled', false);
+    $('#btnC').prop('disabled', false);
+
+    // idがbtnAの背景色を黄色に指定
+    $('#btnA').css('background-color', 'yellow');
+    // idがbtnAの文字色を緑に指定
+    $('#btnA').css('color', 'green');
+
+    // // idがremainのfont-weightをboldに指定
+    // $('#remain').css('font-weight', 'bold');
+}
+
 
     // Alarmの処理
     function alarm(){
@@ -183,7 +191,6 @@
     function btnAClick(e){
         active = true;
         startTime = new Date();  
-        
     }
 
     // ButtonBがクリックされた時の処理
